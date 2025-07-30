@@ -34,7 +34,7 @@ class GetUserInput {
             String userCommand = readInput.nextLine();
             
             while(userCommand == null || userCommand.isEmpty()) {
-                System.out.println("Invalid, please enter a number from 1-7");
+                System.out.println("Invalid, please enter a number from 1-4");
                 userCommand = readInput.nextLine();
             }      
             
@@ -55,7 +55,7 @@ class GetUserInput {
                 
                 default:
                     
-                    System.out.println("Invalid, please enter a number from 0-4");
+                    System.out.println("Invalid, please enter a number from 1-4");
                     break;
             }
             
