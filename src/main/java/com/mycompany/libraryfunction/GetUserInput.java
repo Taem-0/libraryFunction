@@ -47,7 +47,11 @@ class GetUserInput {
                     
                     ProcessBorrow();
                     break;
+                 
+                case "3":
                     
+                    ProcessReturn();
+                    break;
                 case "4":
 
                     closeApp = true;
@@ -79,8 +83,29 @@ class GetUserInput {
         shelf.BorrowBook(processedId, userName);
     }
     
+    private void ProcessReturn() {
+        
+        Scanner readInput = new Scanner(System.in);
+        
+        String userName = GetName();
+        
+        boolean hasBorrowedBooks = shelf.GetBorrowedBooks(userName);
+        System.out.println("=======================");
+        
+        if(hasBorrowedBooks) {
+            int processedId = GetID();
+            shelf.ReturnBook(processedId, userName);
+        } else {
+            System.out.println("No books to return.");
+        }
+        
+        
+        
+        
+    }
     
     private String GetName() {
+        
         Scanner readInput = new Scanner(System.in);
                 
         System.out.print("Enter your name: ");
