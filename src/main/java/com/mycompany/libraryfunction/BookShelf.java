@@ -19,8 +19,6 @@ public class BookShelf {
     
     public BookShelf() {
         //Fiction
-        books.add(new Book(1, "Tite", "Dr. Lazer Eyes", "ulol"));
-        books.add(new Book(2, "Burat", "Barok", "pakyu"));
         
         books.add(new Book(3, "One Piece, Vol.41", "Eiichiro Oda", "Manga"));
         books.add(new Book(4, "Capeta", "Masahito Soda", "Manga"));

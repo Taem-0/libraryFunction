@@ -97,11 +97,7 @@ class GetUserInput {
             shelf.ReturnBook(processedId, userName);
         } else {
             System.out.println("No books to return.");
-        }
-        
-        
-        
-        
+        }   
     }
     
     private String GetName() {
@@ -143,7 +139,6 @@ class GetUserInput {
         }
         
         return parsedIdInput;
-        
-    }
-    
+     
+    } 
 }
